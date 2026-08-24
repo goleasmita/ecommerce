@@ -906,11 +906,12 @@ body {
     font-size: 26px;
   }
 }
+
 /* =====================================================
    FOOTER
 ===================================================== */
 
-.shop-footer {
+.blog-footer {
   padding: 75px 0 20px;
 
   background: linear-gradient(135deg, #556b3f, #8b9d5a);
@@ -918,58 +919,54 @@ body {
   color: white;
 }
 
-.shop-footer h3,
-.shop-footer h4 {
+.blog-footer h3,
+.blog-footer h4 {
   color: #d1d7ab;
 }
 
-.shop-footer h3 {
+.blog-footer h3 {
   font-size: 28px;
 
   margin-bottom: 15px;
 }
 
-.shop-footer h4 {
-  font-size: 17px;
+.blog-footer h4 {
+  font-size: 19px;
 
   margin-bottom: 18px;
 }
 
-.shop-footer p {
+.blog-footer p {
   color: rgba(255, 255, 255, 0.7);
 
-  font-size: 17px !important;
+  font-size: 17px;
 
   line-height: 1.8;
 }
 
-.shop-footer ul {
+.blog-footer ul {
   list-style: none;
 
   padding: 0;
-
-  margin: 0;
 }
 
-.shop-footer li {
+.blog-footer li {
   margin-bottom: 10px;
 }
 
-.shop-footer li a {
+.blog-footer li a {
   color: rgba(255, 255, 255, 0.7);
 
-  font-size: 14px;
+  font-size: 17px;
 
   transition: 0.3s;
 }
 
-.shop-footer li a:hover {
+.blog-footer li a:hover {
   color: #d1d7ab;
 
   padding-left: 4px;
 }
-
-/* SOCIAL */
 
 .footer-social {
   display: flex;
@@ -983,12 +980,12 @@ body {
   width: 35px;
   height: 35px;
 
-  border-radius: 50%;
-
   display: flex;
 
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
 
   background: rgba(209, 215, 171, 0.15);
 
@@ -1001,24 +998,20 @@ body {
   background: #d1d7ab;
 
   color: #556b3f;
-
-  transform: translateY(-3px);
 }
-
-/* FOOTER BOTTOM */
 
 .footer-bottom {
   margin-top: 50px;
 
   padding-top: 20px;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-
   text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom p {
   margin: 0;
 
-  font-size: 9px;
+  font-size: 15px;
 }
