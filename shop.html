@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop | Premium Dates</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top" id="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-white" href="#">
+          <img src="./images/logo.png" alt="" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Center Menu -->
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="categories.html"
+                >Categories</a
+              >
+            </li>
+
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link active-circle" href="shop.html"> Shop </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="menu.html">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right Button -->
+          <a href="#" class="btn btn-outline-light rounded-pill px-4">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+         SHOP HERO
+    ====================================================== -->
+
+    <section class="shop-hero">
+      <div class="container">
+        <div class="shop-hero-content text-center">
+          <span class="shop-subtitle"> PREMIUM ORGANIC DATES </span>
+
+          <h1>
+            Shop Our
+            <span>Finest Dates</span>
+          </h1>
+
+          <p>
+            Discover naturally sweet, premium-quality dates carefully selected
+            for exceptional taste and freshness.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SHOP SECTION
+    ====================================================== -->
+
+    <section class="shop-section">
+      <div class="container">
+        <!-- SECTION HEADING -->
+
+        <div class="shop-heading">
+          <div>
+            <span class="section-small-title"> OUR COLLECTION </span>
+
+            <h2>Fresh & <span>Premium</span></h2>
+
+            <p>Choose from our finest selection of naturally grown dates.</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+             FILTER BAR
+        ================================================== -->
+
+        <div class="shop-toolbar">
+          <!-- SEARCH -->
+
+          <div class="shop-search">
+            <i class="bi bi-search"></i>
+
+            <input type="text" placeholder="Search dates..." id="searchInput" />
+          </div>
+
+          <!-- FILTER BUTTONS -->
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+
+            <button class="filter-btn" data-filter="premium">Premium</button>
+
+            <button class="filter-btn" data-filter="organic">Organic</button>
+
+            <button class="filter-btn" data-filter="popular">Popular</button>
+          </div>
+
+          <!-- SORT -->
+
+          <div class="sort-wrapper">
+            <select id="sortProducts">
+              <option value="default">Sort By</option>
+
+              <option value="low">Price: Low to High</option>
+
+              <option value="high">Price: High to Low</option>
+
+              <option value="name">Name: A-Z</option>
+            </select>
+
+            <i class="bi bi-chevron-down"></i>
+          </div>
+        </div>
+
+        <!-- =================================================
+             PRODUCT GRID
+        ================================================== -->
+
+        <div class="row g-4" id="productGrid">
+          <!-- PRODUCT 1 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="premium"
+            data-price="599"
+            data-name="Ajwa Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge"> Premium </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/ajwa_date_shop.jpg" alt="Ajwa Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Premium Dates </span>
+
+                <h3>Ajwa Dates</h3>
+
+                <p>Soft, naturally sweet and rich in flavor.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+
+                  <span> 4.8 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹599 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="popular"
+            data-price="699"
+            data-name="Medjool Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge popular"> Best Seller </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Medjool_Dates_shop.jpg" alt="Medjool Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Premium Dates </span>
+
+                <h3>Medjool Dates</h3>
+
+                <p>Large, soft dates with a rich caramel flavor.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+                  <span> 5.0 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹699 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="organic"
+            data-price="399"
+            data-name="Pitted Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge organic"> Organic </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Pitted_Dates_shop.jpg" alt="Pitted Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Organic Dates </span>
+
+                <h3>Pitted Dates</h3>
+
+                <p>Soft and convenient dates with pits removed.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+
+                  <span> 4.6 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹399 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 4 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="premium"
+            data-price="499"
+            data-name="Deglet Noor Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge"> Premium </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img
+                  src="images/Deglet_Noor_shop.jpg"
+                  alt="Deglet Noor Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Premium Dates </span>
+
+                <h3>Deglet Noor</h3>
+
+                <p>Light, tender dates with delicate sweetness.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+
+                  <span> 4.7 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹499 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 5 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="organic"
+            data-price="449"
+            data-name="Kimia Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge organic"> Organic </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Kimia_Dates_shop.jpg" alt="Kimia Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Organic Dates </span>
+
+                <h3>Kimia Dates</h3>
+
+                <p>Dark, soft and juicy with natural sweetness.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+
+                  <span> 4.8 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹449 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 6 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="popular"
+            data-price="349"
+            data-name="Dried Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge popular"> Popular </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Dried_Dates_shop.jpg" alt="Dried Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Dried Dates </span>
+
+                <h3>Dried Dates</h3>
+
+                <p>Naturally dried with concentrated sweetness.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+
+                  <span> 4.6 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹349 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 7 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="premium"
+            data-price="799"
+            data-name="Royal Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge"> Premium </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Royal_Dates_shop.jpg" alt="Royal Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Premium Dates </span>
+
+                <h3>Royal Dates</h3>
+
+                <p>Luxuriously soft dates with a naturally rich flavor.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+
+                  <span> 5.0 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹799 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 8 -->
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 product-item"
+            data-category="organic"
+            data-price="299"
+            data-name="Organic Dates">
+            <div class="shop-product-card">
+              <div class="product-image">
+                <span class="product-badge organic"> Organic </span>
+
+                <button class="wishlist-btn">
+                  <i class="bi bi-heart"></i>
+                </button>
+
+                <img src="images/Organic_Dates_shop.jpg" alt="Organic Dates" />
+              </div>
+
+              <div class="product-content">
+                <span class="product-category"> Organic Dates </span>
+
+                <h3>Organic Dates</h3>
+
+                <p>Naturally grown dates packed with wholesome goodness.</p>
+
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+
+                  <span> 4.5 </span>
+                </div>
+
+                <div class="product-bottom">
+                  <div>
+                    <span class="price"> ₹299 </span>
+
+                    <span class="unit"> / kg </span>
+                  </div>
+
+                  <button class="cart-btn">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NO PRODUCTS -->
+
+        <div class="no-products text-center" id="noProducts">
+          <i class="bi bi-search"></i>
+
+          <h3>No products found</h3>
+
+          <p>Try searching for another type of date.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         OFFER BANNER
+    ====================================================== -->
+
+    <section class="shop-offer">
+      <div class="container">
+        <div class="offer-box">
+          <div>
+            <span> SPECIAL OFFER </span>
+
+            <h2>
+              Sweetness Delivered
+              <br />
+              To Your Door
+            </h2>
+
+            <p>Get fresh premium dates delivered directly to your doorstep.</p>
+          </div>
+
+          <a href="#" class="offer-btn">
+            Shop Now
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="shop-footer overflow-hidden">
+      <div class="container">
+        <div class="row g-5">
+          <!-- ABOUT -->
+
+          <div class="col-lg-4 col-md-6">
+            <h3>Premium Dates</h3>
+
+            <p>
+              Bringing naturally sweet, organic and premium dates from trusted
+              farms directly to your home.
+            </p>
+
+            <div class="footer-social">
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- LINKS -->
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Quick Links</h4>
+
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="categories.html">Categories</a>
+              </li>
+
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SUPPORT -->
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Customer Care</h4>
+
+            <ul>
+              <li>
+                <a href="#">Shipping</a>
+              </li>
+
+              <li>
+                <a href="#">Returns</a>
+              </li>
+
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Contact Us</h4>
+
+            <p>
+              <i class="bi bi-telephone"></i>
+              +91 98765 43210
+            </p>
+
+            <p>
+              <i class="bi bi-envelope"></i>
+              hello@dates.com
+            </p>
+
+            <p>
+              <i class="bi bi-geo-alt"></i>
+              Navi Mumbai, Maharashtra
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Premium Dates. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         SHOP JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+
+      const products = document.querySelectorAll(".product-item");
+
+      const searchInput = document.getElementById("searchInput");
+
+      const sortSelect = document.getElementById("sortProducts");
+
+      const productGrid = document.getElementById("productGrid");
+
+      const noProducts = document.getElementById("noProducts");
+
+      let currentFilter = "all";
+
+      /* =========================================
+         FILTER
+      ========================================= */
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          button.classList.add("active");
+
+          currentFilter = button.dataset.filter;
+
+          filterProducts();
+        });
+      });
+
+      /* =========================================
+         SEARCH
+      ========================================= */
+
+      searchInput.addEventListener("input", () => {
+        filterProducts();
+      });
+
+      /* =========================================
+         FILTER FUNCTION
+      ========================================= */
+
+      function filterProducts() {
+        const searchValue = searchInput.value.toLowerCase().trim();
+
+        let visibleCount = 0;
+
+        products.forEach((product) => {
+          const category = product.dataset.category;
+
+          const name = product.dataset.name.toLowerCase();
+
+          const categoryMatch =
+            currentFilter === "all" || category === currentFilter;
+
+          const searchMatch = name.includes(searchValue);
+
+          if (categoryMatch && searchMatch) {
+            product.style.display = "";
+
+            visibleCount++;
+          } else {
+            product.style.display = "none";
+          }
+        });
+
+        noProducts.style.display = visibleCount === 0 ? "block" : "none";
+      }
+
+      /* =========================================
+         SORT
+      ========================================= */
+
+      sortSelect.addEventListener("change", () => {
+        const items = Array.from(products);
+
+        const value = sortSelect.value;
+
+        if (value === "low") {
+          items.sort(
+            (a, b) => Number(a.dataset.price) - Number(b.dataset.price),
+          );
+        }
+
+        if (value === "high") {
+          items.sort(
+            (a, b) => Number(b.dataset.price) - Number(a.dataset.price),
+          );
+        }
+
+        if (value === "name") {
+          items.sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
+        }
+
+        items.forEach((item) => {
+          productGrid.appendChild(item);
+        });
+      });
+
+      /* =========================================
+         WISHLIST
+      ========================================= */
+
+      document.querySelectorAll(".wishlist-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const icon = button.querySelector("i");
+
+          icon.classList.toggle("bi-heart");
+
+          icon.classList.toggle("bi-heart-fill");
+
+          button.classList.toggle("liked");
+        });
+      });
+
+      /* =========================================
+         NAVBAR SCROLL
+      ========================================= */
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

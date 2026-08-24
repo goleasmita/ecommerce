@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Menu | Premium Dates</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top" id="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-white" href="#">
+          <img src="./images/logo.png" alt="" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Center Menu -->
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="categories.html"
+                >Categories</a
+              >
+            </li>
+
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link text-white" href="shop.html"> Shop </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active-circle" href="menu.html">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right Button -->
+          <a href="#" class="btn btn-outline-light rounded-pill px-4">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+         MENU HERO
+    ====================================================== -->
+
+    <section class="menu-hero">
+      <div class="container">
+        <div class="menu-hero-content text-center">
+          <span class="hero-small"> PREMIUM DATE COLLECTION </span>
+
+          <h1>
+            Discover Our
+            <span>Special Menu</span>
+          </h1>
+
+          <p>
+            From naturally sweet dates to delicious healthy combinations,
+            explore our carefully crafted selection made for every occasion.
+          </p>
+
+          <a href="#menu-list" class="hero-btn">
+            Explore Menu
+            <i class="bi bi-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         MENU INTRO
+    ====================================================== -->
+
+    <section class="menu-intro">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- IMAGE -->
+
+          <div class="col-lg-6">
+            <div class="intro-image">
+              <img src="images/premium_dates.png" alt="Premium Dates" />
+
+              <div class="intro-badge">
+                <strong>100%</strong>
+
+                <span>Natural</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+
+          <div class="col-lg-6">
+            <div class="intro-content">
+              <span class="section-subtitle"> TASTE THE DIFFERENCE </span>
+
+              <h2>
+                Naturally Sweet.
+                <span>Simply Delicious.</span>
+              </h2>
+
+              <p>
+                Our menu brings together premium dates and wholesome
+                combinations created for people who love delicious and
+                nutritious food.
+              </p>
+
+              <p>
+                Every selection is carefully prepared using naturally sweet
+                dates, fresh ingredients and quality products.
+              </p>
+
+              <div class="intro-points">
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Naturally sweet
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  No unnecessary preservatives
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Premium quality ingredients
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         MENU LIST
+    ====================================================== -->
+
+    <section class="menu-list-section" id="menu-list">
+      <div class="container">
+        <!-- HEADING -->
+
+        <div class="section-heading text-center">
+          <span class="section-subtitle"> OUR SPECIAL MENU </span>
+
+          <h2>
+            Choose Your
+            <span>Favourite</span>
+          </h2>
+
+          <p>
+            Delicious choices made with premium dates and natural ingredients.
+          </p>
+        </div>
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="menu-filters">
+          <button class="menu-filter active" data-filter="all">All</button>
+
+          <button class="menu-filter" data-filter="dates">Fresh Dates</button>
+
+          <button class="menu-filter" data-filter="snacks">
+            Healthy Snacks
+          </button>
+
+          <button class="menu-filter" data-filter="drinks">Beverages</button>
+
+          <button class="menu-filter" data-filter="gifts">Gift Boxes</button>
+        </div>
+
+        <!-- MENU ITEMS -->
+
+        <div class="row g-4 menu-grid">
+          <!-- ITEM 1 -->
+
+          <div class="col-lg-6 menu-item" data-category="dates">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/ajwa-dates.jpg" alt="Ajwa Dates" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Ajwa Dates</h3>
+
+                  <span>₹599</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  Soft and naturally sweet premium Ajwa dates with a rich,
+                  delicate flavour.
+                </p>
+
+                <small>
+                  <i class="bi bi-leaf-fill"></i>
+                  Premium Selection
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+
+          <div class="col-lg-6 menu-item" data-category="dates">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/medjool-dates.jpg" alt="Medjool Dates" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Medjool Dates</h3>
+
+                  <span>₹699</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  Large, soft and juicy dates with a naturally rich caramel
+                  sweetness.
+                </p>
+
+                <small>
+                  <i class="bi bi-star-fill"></i>
+                  Best Seller
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+
+          <div class="col-lg-6 menu-item" data-category="dates">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/pitted-dates.jpg" alt="Pitted Dates" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Pitted Dates</h3>
+
+                  <span>₹399</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  Soft and convenient dates with the pits carefully removed.
+                </p>
+
+                <small>
+                  <i class="bi bi-heart-fill"></i>
+                  Easy Snacking
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+
+          <div class="col-lg-6 menu-item" data-category="snacks">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/date_nuts.jpg" alt="Date Nut Mix" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Date & Nut Mix</h3>
+
+                  <span>₹249</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  A delicious combination of premium dates, almonds, cashews and
+                  walnuts.
+                </p>
+
+                <small>
+                  <i class="bi bi-heart-fill"></i>
+                  Healthy Snack
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+
+          <div class="col-lg-6 menu-item" data-category="snacks">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/energy_balls.jpg" alt="Date Energy Balls" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Date Energy Balls</h3>
+
+                  <span>₹299</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  Naturally sweet energy bites made with dates and wholesome
+                  nuts.
+                </p>
+
+                <small>
+                  <i class="bi bi-lightning-fill"></i>
+                  Energy Boost
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+
+          <div class="col-lg-6 menu-item" data-category="drinks">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/date_shake.jpg" alt="Date Shake" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Premium Date Shake</h3>
+
+                  <span>₹199</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  Creamy and naturally sweet date shake prepared with premium
+                  dates.
+                </p>
+
+                <small>
+                  <i class="bi bi-cup-straw"></i>
+                  Freshly Prepared
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 7 -->
+
+          <div class="col-lg-6 menu-item" data-category="drinks">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="images/date-smoothie.jpg" alt="Date Smoothie" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Date Almond Smoothie</h3>
+
+                  <span>₹229</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  A smooth blend of dates, almonds and fresh ingredients for a
+                  nourishing drink.
+                </p>
+
+                <small>
+                  <i class="bi bi-cup-straw"></i>
+                  Healthy Drink
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 8 -->
+
+          <div class="col-lg-6 menu-item" data-category="gifts">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img
+                  src="images/date-gift-box.jpg"
+                  alt="Premium Date Gift Box" />
+              </div>
+
+              <div class="menu-content">
+                <div class="menu-title-row">
+                  <h3>Premium Date Gift Box</h3>
+
+                  <span>₹899</span>
+                </div>
+
+                <div class="menu-line"></div>
+
+                <p>
+                  A beautifully packed selection of premium dates, perfect for
+                  gifting and special occasions.
+                </p>
+
+                <small>
+                  <i class="bi bi-gift-fill"></i>
+                  Perfect Gift
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         HEALTH SECTION
+    ====================================================== -->
+
+    <section class="health-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="section-subtitle"> GOODNESS IN EVERY BITE </span>
+
+            <h2>
+              Sweetness That
+              <span>Feels Good</span>
+            </h2>
+
+            <p>
+              Dates are naturally sweet and provide a convenient source of
+              energy. Enjoy them as a snack, pair them with nuts or add them to
+              your favourite recipes.
+            </p>
+
+            <div class="health-points">
+              <div class="health-point">
+                <div class="health-icon">
+                  <i class="bi bi-leaf"></i>
+                </div>
+
+                <div>
+                  <h4>Natural Goodness</h4>
+                  <p>Naturally sweet and carefully selected.</p>
+                </div>
+              </div>
+
+              <div class="health-point">
+                <div class="health-icon">
+                  <i class="bi bi-lightning"></i>
+                </div>
+
+                <div>
+                  <h4>Natural Energy</h4>
+                  <p>A delicious snack for your busy day.</p>
+                </div>
+              </div>
+
+              <div class="health-point">
+                <div class="health-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
+
+                <div>
+                  <h4>Wholesome Choice</h4>
+                  <p>A simple addition to a balanced lifestyle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="health-card">
+              <div class="health-card-icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+
+              <h3>
+                Naturally
+                <span>Premium</span>
+              </h3>
+
+              <p>
+                Carefully selected dates from trusted farms for an exceptional
+                experience.
+              </p>
+
+              <a href="shop.html">
+                Explore Shop
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="menu-cta">
+      <div class="container">
+        <div class="cta-box text-center">
+          <span> PREMIUM ORGANIC DATES </span>
+
+          <h2>
+            Make Every Bite
+            <br />
+            Naturally Sweet
+          </h2>
+
+          <p>
+            Explore our premium collection and discover your favourite dates.
+          </p>
+
+          <a href="shop.html" class="cta-btn">
+            Shop Dates
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="menu-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h3>Premium Dates</h3>
+
+            <p>
+              Naturally sweet, carefully selected and delivered with quality you
+              can trust.
+            </p>
+
+            <div class="footer-social">
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Explore</h4>
+
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="categories.html">Categories</a>
+              </li>
+
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li>
+                <a href="menu.html">Menu</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Quick Links</h4>
+
+            <ul>
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+
+              <li>
+                <a href="#">Contact</a>
+              </li>
+
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Contact</h4>
+
+            <p>
+              <i class="bi bi-telephone"></i>
+              +91 98765 43210
+            </p>
+
+            <p>
+              <i class="bi bi-envelope"></i>
+              hello@dates.com
+            </p>
+
+            <p>
+              <i class="bi bi-geo-alt"></i>
+              Navi Mumbai, Maharashtra
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Premium Dates. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MENU FILTER -->
+
+    <script>
+      const menuFilters = document.querySelectorAll(".menu-filter");
+
+      const menuItems = document.querySelectorAll(".menu-item");
+
+      menuFilters.forEach((button) => {
+        button.addEventListener("click", () => {
+          menuFilters.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          button.classList.add("active");
+
+          const filter = button.dataset.filter;
+
+          menuItems.forEach((item) => {
+            if (filter === "all" || item.dataset.category === filter) {
+              item.style.display = "";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      /* NAVBAR SCROLL */
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
